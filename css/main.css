@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.lifts {
+  display: none;
+}
+
+#input-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#newbtn {
+  margin: 10px;
+}
+
+.liftsandfloors {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#floors{
+  width: 75vw;
+  padding: 10px;
+}
+
+.floor{
+  display: flex;
+  flex-direction: start;
+}
+
+
+.descfloor {
+  height: 100%;
+  /* min-width: fit-content;
+  max-width: 10%; */
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.liftarea{
+  height: 100%;
+  margin: auto 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  gap: 4%;
+}
+
+@media screen and (max-width: 600px) {
+  #floors{
+    width: 100%;
+  }
+  .floors{
+    width: 100%;
+  }
+}
+
+/* add lift doors and move them when ever a lift is called
+both door should open using translateX and close and then the lift needs
+to reach the destination and then again open the doors and close the doors
+all this time the lift is considered to be busy */
